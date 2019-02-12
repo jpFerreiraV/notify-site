@@ -14,6 +14,7 @@ body{
         "footer";
 }
 
+/* BANNER */
 header{
     background-image: url(imagem/banner.png);
     background-position: center;
@@ -48,6 +49,7 @@ header h3 span{
 header p {
     width: 75%;
     word-wrap:normal;
+    word-wrap: normal;
 }
 
 .imagens-header{
@@ -76,6 +78,7 @@ header .mao img{
 
 .imagens-header div:hover{
     background-color: #2ecb70;
+    transition: 1s;
 }
 
 main{
@@ -90,6 +93,43 @@ main{
 footer{
     grid-area: footer;
 }
+
+/* FIM DO BANNER */
+/* MAIN */
+.mainDiv{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 35vh;
+    align-content: center;
+}
+.section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.section p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.main img{
+    background-color: rgb(46, 203, 112);
+    border-radius: 100%;
+    padding: 20px;
+    max-width: 2vw;
+    transition: 1s;
+}
+.imgSection{
+    display: flex;
+    justify-content: space-around;
+    width: 100vw;
+}
+/* FIM DO MAIN */
+/* contato */
+.contato{
+    grid-area: contato;
+    background-color: rgb(227, 227, 227 );
+}
+
 
 @media(min-width: 576px){
     header{
